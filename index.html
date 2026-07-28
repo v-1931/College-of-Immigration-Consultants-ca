@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immigration and Citizenship Law | Regulated Canadian Immigration Consultant by. Abdur Rahman</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="keywords" content="Abdur Rahman Canada, immigration and Citizenship Law, are required by IRCC, and ESDC">
+    <link rel="icon" type="image/x-icon" href="https://uploads.onecompiler.io/44s55p666/1781309183762/16999.jpg">
+    <style>
+        :root {
+            --primary: #002f6c;    /* কর্পোরেট ডিপ ব্লু */
+            --secondary: #004b87;  /* লাইট ব্লু */
+            --accent: #c62828;     /* ম্যাপেল রেড */
+            --dark: #0f172a;
+            --light: #f8fafc;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        /* 🌐 নেভিগেশন বার */
+        .navbar {
+            background-color: #ffffff;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 16px;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 15px;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        /* 🍁 হিরো ব্যানার সেকশন */
+        .hero {
+            background: linear-gradient(135deg, rgba(0,47,108,0.95) 0%, rgba(0,75,135,0.9) 100%), 
+                        url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+            color: #ffffff;
+            padding: 100px 5%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+            opacity: 0.9;
+        }
+
+        .badge-verified {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: var(--accent);
+            color: #ffffff;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 11px;
+            margin-bottom: 25px;
+        }
+
+        /* 💼 সার্ভিস সেকশন */
+        .services {
+            padding: 60px 5%;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 28px;
+            color: var(--primary);
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: #ffffff;
+            padding: 30px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            transition: transform 0.3s;
+            border-bottom: 3px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-bottom-color: var(--primary);
+        }
+
+        .service-card i {
+            font-size: 35px;
+            color: var(--secondary);
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        /* ☎️ কন্টাক্ট সেকশন */
+        .contact-section {
+            background-color: #ffffff;
+            padding: 60px 5%;
+        }
+
+        .contact-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        .contact-info h2 {
+            font-size: 26px;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .contact-info p {
+            color: #64748b;
+            margin-bottom: 25px;
+        }
+
+        .info-list {
+            list-style: none;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            background: var(--light);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .info-item i {
+            font-size: 20px;
+            color: var(--accent);
+            width: 25px;
+            text-align: center;
+        }
+
+        .info-text span {
+            display: block;
+            font-size: 12px;
+            color: #64748b;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .info-text a, .info-text p {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--dark);
+            text-decoration: none;
+            margin: 0;
+        }
+
+        /* কন্টাক্ট ফর্ম */
+        .contact-form-wrapper {
+            background: var(--light);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .contact-form-wrapper h3 {
+            font-size: 18px;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: var(--dark);
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: var(--secondary);
+        }
+
+        .btn-submit {
+            width: 100%;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+            font-size: 15px;
+        }
+
+        .btn-submit:hover {
+            background-color: var(--secondary);
+        }
+
+        /* 📋 ফুটার */
+        footer {
+            background-color: var(--primary);
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+
+        /* 🌟 কন্টাক্ট সাবমিট কাস্টম পপ-আপ ইফেক্ট */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(5px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10000;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .popup-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .success-popup {
+            background: #ffffff;
+            padding: 35px 25px;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            transform: scale(0.7);
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .popup-overlay.active .success-popup {
+            transform: scale(1);
+        }
+
+        .popup-icon {
+            width: 70px;
+            height: 70px;
+            background: #e8f5e9;
+            color: #2e7d32;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 32px;
+            margin: 0 auto 20px auto;
+            border: 2px solid #a5d6a7;
+            animation: scaleIn 0.4s ease-out;
+        }
+
+        .success-popup h4 {
+            color: var(--primary);
+            font-size: 20px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .success-popup p {
+            color: #475569;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+
+        .popup-btn {
+            background-color: #2e7d32;
+            color: #ffffff;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .popup-btn:hover {
+            background-color: #1b5e20;
+        }
+
+        @keyframes scaleIn {
+            0% { transform: scale(0); }
+            100% { transform: scale(1); }
+        }
+
+        @media (max-width: 768px) {
+            .contact-container { grid-template-columns: 1fr; }
+            .nav-links { display: none; }
+            .hero h1 { font-size: 28px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Immigration and<span> Citizenship Law</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="badge-verified">
+            <i class="fa-solid fa-user-shield"></i> Regulated Member CICC-RCIC Canadian Immigration
+        </div>
+        <h1>Senior Immigration Consultant</h1>
+        <p style="font-weight: bold; font-size: 15px; margin-top: 15px;">Queen’s Graduate Diploma in Immigrations and Citizenship Law is an online platform available worldwide. It is a regulated Canadian immigration consultant licensed by the College of Immigration and Citizenship Consultants of Canada.</p>
+        <p style="font-weight: bold; font-size: 14px; color: #ffeb3b; margin-top: 10px;">License Code: RCIC #500819</p>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="section-title">Our Visa Categories</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fa-solid fa-briefcase"></i>
+                <h3>Work Permits</h3>
+                <p style="font-weight: bold; font-size: 13px; color: #475569;">Comprehensive assistance with LMIA and employer-specific work applications.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h3>Graduate level studies</h3>
+                <p style="font-weight: bold; font-size: 13px; color: #475569;">Designed for students with a bachelor's degree from a recognized institution looking to establish a career in immigration. Self-directed learning, competency-based assessments and a course load similar to a full-time job.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-passport"></i>
+                <h3>Express Entry</h3>
+                <p style="font-weight: bold; font-size: 13px; color: #475569;">Strategic management of Federal Skilled Worker and CEC profile submissions. And fast processing.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://uploads.onecompiler.io/44s55p666/1782481730736/18146.png" alt="Showcase Image Banner" style="pointer-events: none; margin-bottom: 15px;" ondragstart="return false;" width="30%">
+                <h3>Skills training & knowledge</h3>
+                <p style="font-weight: bold; font-size: 13px; color: #475569;">Nine bespoke courses that cover critical areas of the immigration and citizenship landscape, from ethics to economic immigration.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://uploads.onecompiler.io/44s55p666/1782481297144/18145.png" alt="Showcase Image Banner" style="pointer-events: none; margin-bottom: 15px;" ondragstart="return false;" width="30%">
+                <h3>Set up for success</h3>
+                <p style="font-weight: bold; font-size: 13px; color: #475569;">Starting with an intensive six-week fundamentals course, the program is designed to prepare students for entry into immigration consulting.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://uploads.onecompiler.io/44s4cs9tm/1781868795302/1000241224.png" alt="Showcase Image Banner" style="pointer-events: none; margin-bottom: 15px;" ondragstart="return false;" width="30%">
+                <h3>Mr. MD Abdur Rahman</h3>
+                <p style="font-weight: bold; font-size: 13px; color: #475569;">A regulated Canadian immigration consultant licensed by the College of Immigration and Citizenship Consultants of Canada.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://uploads.onecompiler.io/44s55p666/1782477516459/18141.png" alt="Showcase Image Banner" style="pointer-events: none; margin-bottom: 15px;" ondragstart="return false;" width="30%">
+                <h3>Visit the land of your dreams</h3>
+                <p style="font-weight: bold; font-size: 13px; color: #475569;">I work 100% accurately and provide accurate guidance on various visas for Canada, Australia, and Europe.</p>
+            </div>
+            <div class="service-card" style="display: flex; align-items: center; justify-content: center;">
+                <img src="https://uploads.onecompiler.io/44s55p666/1782478614388/18142.png" alt="Showcase Image Banner" style="pointer-events: none;" ondragstart="return false;" width="60%">
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <h2 class="section-title" style="text-align: center;">Contact Our Immigration & Citizenship Law Office</h2>
+        <div class="contact-container">
+            
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <p style="font-weight: bold; font-size: 15px;">Connect directly with our support helpdesks or leave a message for case assessment.</p>
+                
+                <div class="info-list">
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <div class="info-text">
+                            <span>Contact IMO:</span>
+                            <a href="https://profile.imo.im/profileshare/shr.AAAAAAAAAAAAAAAAAAAAAIoBfsG16aP_1-gyNDdM789oFRN5uLnmCA4Exp6jBtNi" target="_blank">+1 (365) 395-3775</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fa-solid fa-headset"></i>
+                        <div class="info-text">
+                            <span>WhatsApp:</span>
+                            <a href="https://wa.link/y4u0i6" target="_blank">+1 (672) 284-4386</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-id-card"></i>
+                        <div class="info-text">
+                            <span>Email:</span>
+                            <a href="mailto:info.abdurrahaman@business.com">info.abdurrahaman@business.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <h3>International Self-Assessment</h3>
+                <p style="font-weight: bold; font-size: 14px; color: #64748b; margin-bottom: 20px;">Are you ready to explore your future as an immigration professional? Take this assessment to determine your eligibility!</p>
+                
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label>Surname/Family Name:</label>
+                        <input type="text" placeholder="Your Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input type="email" placeholder="Your Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Describe your visa:</label>
+                        <textarea rows="4" placeholder="Briefly describe your visa case..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p style="font-weight: bold; font-size: 15px;">&copy; 🍁 2026 Regulated Canadian Immigration Consultant. All Rights Reserved.</p>
+    </footer>
+
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="success-popup">
+            <div class="popup-icon">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h4>সাবমিট সফল হয়েছে!</h4>
+            <p>অসংখ্য ধন্যবাদ আপনার তথ্য সাবমিট করার জন্য। আমরা আপনার ফাইল ও তথ্যগুলো গুলো কিছু সময় পর্যালোচনা করে। খুব শীঘ্রই আপনার সাথে যোগাযোগ করব। ধন্যবাদ.</p>
+            <button class="popup-btn" id="popupCloseBtn">Submit</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(e){
+            e.preventDefault();
+            
+            // কাস্টম পপ-আপ শো করা
+            const overlay = document.getElementById("popupOverlay");
+            overlay.classList.add("active");
+            
+            // ঠিক আছে বাটনে ক্লিক করলে রিডাইরেক্ট হবে
+            document.getElementById("popupCloseBtn").addEventListener("click", function() {
+                overlay.classList.remove("active");
+                // আপনার দেওয়া তথ্য অনুযায়ী  লিংকে রিডাইরেক্ট করা হচ্ছে
+                window.location.href = "https://wa.link/y4u0i6";
+            });
+        });
+    </script>
+</body>
+</html>
