@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Visa Solutions | Premium Service Abdur Rahaman| Canada Australia Work Visa Center.com</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #002147;
+            --accent: #d30c0c;
+            --gold: #c5a059;
+            --bg: #f1f3f6;
+            --white: #ffffff;
+            --green: #00ff88;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0; padding: 0; background: var(--bg); color: #333; overflow-x: hidden;
+        }
+
+        /* --- Lighting Review Marquee --- */
+        .lighting-marquee {
+            background: #000; padding: 12px 0; overflow: hidden; white-space: nowrap;
+            border-bottom: 2px solid var(--accent); box-shadow: 0 0 10px rgba(211, 12, 12, 0.4);
+        }
+        .marquee-content { display: inline-block; animation: scrollLeft 25s linear infinite; }
+        .marquee-item {
+            display: inline-black; color: var(--white); font-weight: bold; font-size: 14px; margin: 0 40px;
+            text-shadow: 0 0 8px rgba(0, 255, 136, 0.6); text-transform: uppercase;
+        }
+        @keyframes scrollLeft { 0% { transform: translateX(0); } 100% { transform: translateX(-20%); } }
+
+        /* --- Header --- */
+        header {
+            background: var(--white); padding: 2px 6%; display: flex; justify-content: space-between;
+            align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000;
+        }
+        .logo { font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 800; color: var(--primary); }
+        .logo span { color: var(--accent); }
+
+        /* --- Visa Album Grid --- */
+        .section-title { text-align: center; margin: 20px 0 20px; font-family: 'Montserrat', sans-serif; }
+        .section-title h2 { font-size: 32px; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; }
+
+        .visa-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px; padding: 0 6% 60px;
+        }
+
+        .album-card {
+            background: var(--white); border-radius: 15px; overflow: hidden;
+            box-shadow: 0 15px 10px rgba(0,0,0,0.07); transition: 0.4s;
+            border: 3px solid #eee; position: relative;
+        }
+        .album-card:hover { transform: translateY(-20px); box-shadow: 0 50px 20px rgba(0,0,0,0.15); }
+
+        .card-img { width: 100%; height: 190px; object-fit: cover; border-bottom: 4px solid var(--accent); }
+        
+        .card-body { padding: 15px; }
+        .card-body h3 { margin: 0 0 15px; font-size: 18px; color: var(--primary); font-family: 'Montserrat', sans-serif; height: 45px; overflow: hidden; }
+        
+        .card-info { font-size: 13px; color: #555; margin-bottom: 10px; line-height: 1.6; }
+        .card-info b { color: #222; display: inline-block; width: 90px; }
+        
+        .price-tag { font-size: 12px; font-weight: 900; color: var(--accent); margin: 15px 0; border-top: 1px solid #eee; padding-top: 10px; }
+
+        .btn-card {
+            display: block; width: 40%; padding: 15px; background: var(--primary); color: #fff;
+            text-align: center; text-decoration: none; border-radius: 8px; font-weight: bold;
+            transition: 0.3s; font-size: 14px;
+        }
+        .btn-card:hover { background: var(--accent); }
+
+        /* --- Flag Mini Album --- */
+        .flag-album { background: #fff; padding: 30px 6%; text-align: center; margin-bottom: 40px; }
+        .flag-scroll { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+        .flag-scroll img { width: 45px; height: 30px; border-radius: 4px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border: 1px solid #ddd; }
+
+        /* --- Client Success Stories (Circle Reviews) --- */
+        .reviews-section { padding: 50px 6%; background: #002147; color: #fff; text-align: center; }
+        .review-flex { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 30px; }
+        .review-circle { width: 250px; text-align: center; }
+        .review-circle img { width: 80px; height: 80px; border-radius: 50%; border: 3px solid var(--white); margin-bottom: 15px; }
+        .review-circle p { font-size: 18px; font-style: italic; color: #ccc; }
+
+        /* --- Service Widgets --- */
+        .service-widgets { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; padding: 40px 6%; }
+        .widget { background: #fff; padding: 20px; border-radius: 12px; text-align: center; border: 1px solid #eee; }
+        .widget i { font-size: 30px; color: var(--accent); margin-bottom: 10px; }
+        .widget h4 { margin: 10px 0; font-size: 15px; }
+
+        /* --- Footer (Your Custom Design Style) --- */
+        footer { background: #000; color: #fff; padding: 60px 6% 20px; border-top: 4px solid var(--accent); }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; }
+        .footer-col h4 { color: var(--accent); margin-bottom: 20px; font-size: 18px; text-transform: uppercase; }
+        .footer-col p { font-size: 13px; color: #888; line-height: 1.8; }
+        
+        .contact-info { background: #111; padding: 15px; border-radius: 10px; border-left: 3px solid var(--green); }
+        .contact-info p { margin: 8px 0; color: #fff; }
+        .contact-info i { color: var(--green); width: 25px; }
+
+        .social-icons { margin-top: 40px; display: flex; gap: 30px; }
+        .social-icons a { width: 35px; height: 35px; background: #222; border-radius: 50%; display: flex; 
+            align-items: center; justify-content: center; color: #fff; text-decoration: none; transition: 0.3s; }
+        .social-icons a:hover { background: var(--accent); transform: translateY(-10px); }
+
+        .bottom-line { text-align: center; padding-top: 30px; margin-top: 50px; border-top: 1px solid #222; font-size: 13px; color: #555; }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">Canada & Australia<span> Global Visa</span>.com</div>
+<!-- Sets a fixed width of 300px and height of 200px -->
+<img src="https://uploads.onecompiler.io/44hy4jvu6/44jgpmzk8/11544.png" 
+width="25%" height="15%" alt="Description">
+</header>
+
+<div class="section-title">
+    <h2>Welcome to Canada & Australia info 💌</h2>
+   <p>Canada Australia Work Visa Service is a trusted Canada Australia Immigration Visa Processing Service,</p>
+</div>
+
+<div class="visa-grid">
+          
+    <div class="album-card">
+        <img src="https://uploads.onecompiler.io/44hy4jvu6/44hy4fps5/11202.jpg" class="card-img">
+        <div class="card-body">
+            <h3>Canada open Work Visa,</h3>
+            <p class="card-info"><b>Processing:</b> 3 - 4 Months</p>
+            <p class="card-info"><b>Job Offer and LMIA:</b> Confirm employment from a Canadian employer, often, the employer will require a Labour Market Impact Assessment (LMIA) to prove that there are no Canadian candidates available for the position.</p>
+            <p class="card-info"><b>Required Documents and Conditions:</b> A valid job offer letter and employer's name. Educational qualification proof (CV/Resume, certificates,</b>
+            Valid passport. Proof of financial support. Medical examination (required). You must submit these otherwise you will fail in visa processing.</b> Occur due to incomplete documentation, background checks, or excessive pressure.</p>
+            <p class="card-info"><b>Company sponsorship:</b> Required, you can do it yourself or you can give me the responsibility,</p>
+            <p class="card-info"><b>Fees (in Canadian Dollars):</b> Work Permit Processing Fee: $155 per person.</p>
+            <p class="card-info"><b>Open Work Permit Holder Fee:</b> Additional $100.</p>
+            <p class="card-info"><b>Biometrics Fee:</b> $85 per person ($170 for families).</p>
+            <p class="card-info"><b>Employer Compliance Fee: </b> $230 (paid by employer),</p>
+            <p class="card-info"><b>Restoration of Status:</b> $355. CAD</p>
+            <p class="card-info"><b>Permanent Residence/Specialized Pathways:</b> Permanent Resident Pathway (2026): $1,525 (with right of PR fee).</p>
+            <p class="card-info"><b>International Experience Canada (IEC):</b> $184.75. CAD</p>
+            <p class="card-info"><b>What documents are required:</b> • Passport Copy, • NID Copy, • Passport size (2) photo ,</b> • Educational certificates, • Job experience certificate, • Phone No, • Gmail id,</p>
+            <div class="price-tag">• Full file Visa Processing fee: (285 CAD)</div>
+            <a href="https://visa-application-from-submit.netlify.app/" class="btn-card">APPLY NOW</a>
+        </div>
+    </div>
+
+    <div class="album-card">
+        <img src="https://uploads.onecompiler.io/44hy4jvu6/44jgpmzk8/11549.png" class="card-img">
+        <div class="card-body">
+            <h3>Skills in Demand visa (subclass 482) </h3>
+            <p class="card-info"><b>Processing:</b>2 - 3 Months</p>
+            <p class="card-info"><b>Requirements:</b> Health Check, Passport, Skills Report</p>
+            <p class="card-info"><b>Fast Processing:</b> Nominations from recognized sponsors are processed quickly.</p>
+            <p class="card-info"><b>Delays:</b> Occur due to incomplete documentation, background checks, or excessive pressure.</p>
+            <p class="card-info"><b>Company sponsorship:</b> Required, you can do it yourself or you can give me the responsibility,</p>
+            <p class="card-info"><b>This job requires:</b> a fee of (155.00 Australian dollars). Job confirmation will be within 24 to 48 hours:</p>
+            <p class="card-info"><b>Nomination Fee:</b> $330 (Paid by Employer).</p>
+            <p class="card-info"><b>Sponsorship Fee:</b> $420 (Paid by Employer, if not</p>
+            <p class="card-info"><b>What documents are required</b> • Passport Copy, • NID Copy, • Passport size (2) photo ,</b> • Educational certificates, • Job experience certificate, • Phone No, • Gmail id,</p>
+            <div class="price-tag">• Full file Visa Processing fee: (255 AUD)</div>
+            <a href="https://visa-application-from-submit.netlify.app/" class="btn-card">APPLY NOW</a>
+        </div>
+    </div>
+
+    <div class="album-card">
+        <img src="https://uploads.onecompiler.io/44q8ezv2q/44qe9wgdb/15411.jpg" class="card-img">
+        <div class="card-body">
+            <h3>Correct Guidelines and Advice from Different European Countries</h3>
+            <p>All Country:</br> USA 40,000 PKR GERMANY 20,000 PKR SPAIN 15,000 PKR NETHERLAND 25,000 PKR HUNGARY 25,000 PKR BELGUIM 30,000 PKR AUSTRIA 25,000 PKR NORWAY 20,000 PKR + SWITZERLAND 25,000 PKR + GREECE 25,000 PKR</p>
+            <a href="https://visa-application-from-submit.netlify.app/" class="btn-card">APPLY NOW</a>
+        </div>
+    </div>
+
+    <div class="album-card">
+        <img src="https://uploads.onecompiler.io/44gn2zxjc/44hgqups2/1000216305.jpg" class="card-img">
+        <div class="card-body">
+            <h2>Note: </h2>
+            <p class="card-info"><b>info:</b> Fees are subject to change and vary depending on the specific</p>
+            <p class="card-info"><b>immigration program:</b> Consult the Official IRCC website for the most current information. </p>
+            <div class="price-tag">Australia Canada immigration and Citizenship </div>
+            <a href="https://visa-application-from-submit.netlify.app/" class="btn-card">APPLY NOW</a>
+        </div>
+    </div>
+    
+    </div>
+
+<div class="flag-album">
+    <h4 style="margin-bottom: 20px; color: #555;">Canada & Australia Global Visa
+Our mission is to simplify the complex immigration process</h4>
+    <div class="flag-scroll">
+        <img src="https://flagcdn.com/w80/ca.png" title="Canada">
+        <img src="https://flagcdn.com/w80/au.png" title="Australia">
+        <img src="https://flagcdn.com/w80/pl.png" title="Poland">
+        <img src="https://flagcdn.com/w80/ro.png" title="Romania">
+        <img src="https://flagcdn.com/w80/us.png" title="USA">
+        <img src="https://flagcdn.com/w80/gb.png" title="UK">
+        <img src="https://flagcdn.com/w80/pt.png" title="Portugal">
+    </div>
+</div>
+
+<div class="reviews-section">
+    <h2>Client Success Stories</h2>
+    <div class="review-flex">
+        <div class="review-circle">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+            <p>Ariful Haque</p>
+            <p>"Successfully got my Canada work permit in just 4 months. Highly recommended!"</p>
+        </div>
+        <div class="review-circle">
+            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="User">
+            <p>Masud Karim</p>
+            <p>"Very professional service. Helped me through the whole Australia visa process."</p>
+        </div>
+        <div class="review-circle">
+            <img src="https://randomuser.me/api/portraits/men/62.jpg" alt="User">
+            <p>Rifat Jaman</p>
+            <p>"Transparent and fast. Got my Poland work contract within 60 days. thanks @Abdur/Rahaman♥️"</p>
+        </div>
+        <div class="review-circle">
+            <img src="https://uploads.onecompiler.io/44q8ezv2q/44qe9wgdb/15398.png" alt="User">
+            <p>Juliana Silva</p>
+            <p>"Global Visa Rahman, thank you very much for completing my student visa.♥️"</p>
+          </div>
+         </div>
+         </div>
+
+    <div class="service-widgets">
+    <div class="widget">
+        <i class="fa fa-calendar-check"></i>
+        <h4>Book Appointment</h4>
+        <p style="font-size: 11px; color: #888;">Schedule a 1-on-1 expert consultation.</p>
+     <a href="https://visa-application-from-submit.netlify.app/" class="price-tag">book Now</a>
+    </div>
+    <div class="widget">
+        <i class="fa fa-file-signature"></i>
+        <h4>Document Check</h4>
+        <p style="font-size: 11px; color: #888;">Verify your files before submission.</p>
+    </div>
+    <div class="widget">
+        <i class="fa fa-headset"></i>
+        <h4>24/7 Support</h4>
+        <p style="font-size: 11px; color: #888;">Live help for urgent visa inquiries.</p>
+     <a href="https://whatsapp.com/dl/" class="price-tag">WhatsApp ☎️</a>
+    </div>
+        <div class="widget">
+        <img src="https://uploads.onecompiler.io/44jf48v7b/44jf48yca/1000218882.png" alt="User" class="review-circle">
+        <h4>Canada Australia Global visa</h4
+        <p style="font-size: 11px; color: #888;">  Canada Australia Work Visa Service is a trusted Canada Australia Immigration Visa Processing Service, authorized to provide 
+        administrative assistance or visa refusal services to visa applicants in Bangladesh.</p>
+     <a href="https://canada-ca-en-immigration-refugees-c.vercel.app/" class="price-tag">• Visit the official IRCC.ca</a>
+      </div>
+        <div class="widget">
+        <img src="https://uploads.onecompiler.io/44jf48v7b/44jf48yca/1000218897.png" alt="User" class="review-circle">
+        <h4>Australia immigration Govt visa</h4
+        <p style="font-size: 11px; color: #888;">Apply for an Australian work visa, family visa or study visa. We have 4 years or more of work experience and skills, start your journey now.</p>
+     <a href="https://immihomeaffairs-govau-visas-evisa.vercel.app/" class="price-tag">• Visit the official.au</a>
+    </div>
+    </div>
+
+    <footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <h4>About Global Visa</h4>
+            <p>Our mission is to simplify the complex immigration process. We provide accurate guidelines for Canada, Australia, and European work permits with 100% transparency.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/Mostofa.Milon.No"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://youtube.com/@abdurrahmancanadacitizen?si=KcWk0DM5IE6fk1S6"><i class="fab fa-youtube"></i></a>
+                <a href="https://whatsapp.com/dl/"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        
+      <div class="footer-col">
+    <h4>Contact Support</h4>
+    <div class="contact-info">
+        <p><i class="fas fa-user"></i> <b>Name:</b> Abdur Rahaman Canadian Citizen</p>
+        <p><i class="fas fa-map-marker-alt"></i> <b>Address:</b> 100 Queen St W, Toronto, ON M5H 2N2, Canada</p>
+        <p><i class="fab fa-whatsapp"></i> <b>WhatsApp:</b> +1 (672) 284-4386</p>
+        <p><i class="fas fa-comment-dots"></i> <b>IMO Number:</b> +1 (365) 395-3775</p>
+        <p><i class="fa fa-envelope"></i> <b>Email:</b> abdur.rahaman.usa@hotmail.com</p>
+    </div>
+</div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <p><i class="fa fa-chevron-right"></i> Refund Policy</p>
+            <p><i class="fa fa-chevron-right"></i> Terms & Conditions</p>
+            <p><i class="fa fa-chevron-right"></i> Security Center</p>
+            <p><i class="fa fa-chevron-right"></i> refusal services</p>
+        </div>
+    </div>
+
+    <div class="bottom-line">
+       <img src="https://uploads.onecompiler.io/44gn2zxjc/44jkn9fa7/1000218931.png"  width="100%" height="100%" alt="Description">
+        <p>© 2026 immigration and Citizenship • Global Visa Processing and Visa Refusal Moving from problem to Solution, Our Responsibility Immigration Guidelines. Rights Reserved. |  @Abdur/Rahaman.com ®</p>
+        <div style="margin-top: 10px; opacity: 0.5;">
+        </div>Copyright © 2019 by 2026. All Right Reserved.</p>
+        <img src="https://uploads.onecompiler.io/44hy4jvu6/44jgpmzk8/11547.png" width="100"> 
+        </div>
+    </div>
+    
+    <div class="lighting-marquee">
+    <div class="marquee-content">
+        <span class="marquee-item">★ Welcome to Canada Australia Global visa.</span>
+        <span class="marquee-item">★ Canada Australia Work Visa Service is a trusted Canada Australia Immigration Visa Processing Service, </span>
+        <span class="marquee-item">★ USA Invitation Letter Received - Tanvir</span>
+        <span class="marquee-item">★ Poland Factory Job Visa Issued - Sabbir</span>
+        <span class="marquee-item">★ authorized to provide administrative assistance or visa refusal services to visa applicants in Bangladesh.</span>
+    </div>
+</div>
+</footer>
+
+</body>
+</html>
