@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College of Immigration and Citizenship Consultants (RCIC/IRC)| Premium Service Abdur Rahaman| RCIC/IRCC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="description" content="College of Immigration, and Citizenship Consultants, (RCIC/IRC), Refugees and Citizenship, Canada (IRCC)">
+    <link rel="icon" type="image/x-icon" href="https://uploads.onecompiler.io/44wcvedfv/1785283293652/21432.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <style>
+        :root {
+            --primary: #002147;
+            --accent: #d30c0c;
+            --gold: #c5a059;
+            --bg: #f1f3f6;
+            --white: #ffffff;
+            --green: #00ff88;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0; padding: 0; background: var(--bg); color: #333; overflow-x: hidden;
+        }
+
+        /* --- Lighting Review Marquee --- */
+        .lighting-marquee {
+            background: #000; padding: 12px 0; overflow: hidden; white-space: nowrap;
+            border-bottom: 2px solid var(--accent); box-shadow: 0 0 10px rgba(211, 12, 12, 0.4);
+        }
+        .marquee-content { display: inline-block; animation: scrollLeft 25s linear infinite; }
+        .marquee-item {
+            display: inline-black; color: var(--white); font-weight: bold; font-size: 14px; margin: 0 40px;
+            text-shadow: 0 0 8px rgba(0, 255, 136, 0.6); text-transform: uppercase;
+        }
+        @keyframes scrollLeft { 0% { transform: translateX(0); } 100% { transform: translateX(-20%); } }
+
+        /* --- Header --- */
+        header {
+            background: var(--white); padding: 2px 6%; display: flex; justify-content: space-between;
+            align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000;
+        }
+        .logo { font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 800; color: var(--primary); }
+        .logo span { color: var(--accent); }
+
+        /* --- Visa Album Grid --- */
+        .section-title { text-align: center; margin: 20px 0 20px; font-family: 'Montserrat', sans-serif; }
+        .section-title h2 { font-size: 32px; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; }
+
+        .visa-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px; padding: 0 2% 60px;
+        }
+
+        .album-card {
+            background: var(--white); border-radius: 15px; overflow: hidden;
+            box-shadow: 0 15px 10px rgba(0,0,0,0.07); transition: 0.4s;
+            border: 3px solid #eee; position: relative;
+        }
+        .album-card:hover { transform: translateY(-20px); box-shadow: 0 50px 20px rgba(0,0,0,0.15); }
+
+        .card-img { width: 100%; height: 5%; object-fit: cover; border-bottom: 4px solid var(--accent); }
+        
+        .card-body { padding: 15px; }
+        .card-body h3 { margin: 0 0 15px; font-size: 18px; color: var(--primary); font-family: 'Montserrat', sans-serif; height: 45px; overflow: hidden; }
+        
+        .card-info { font-size: 13px; color: #555; margin-bottom: 10px; line-height: 1.6; }
+        .card-info b { color: #222; display: inline-block; width: 90px; }
+        
+        .price-tag { font-size: 12px; font-weight: 900; color: var(--accent); margin: 15px 0; border-top: 1px solid #eee; padding-top: 10px; }
+
+        .btn-card {
+            display: block; width: 100%; padding: 15px; background: var(--primary); color: #fff;
+            text-align: center; text-decoration: none; border-radius: 8px; font-weight: bold;
+            transition: 0.3s; font-size: 14px;
+        }
+        .btn-card:hover { background: var(--accent); }
+
+        /* --- Flag Mini Album --- */
+        .flag-album { background: #fff; padding: 30px 6%; text-align: center; margin-bottom: 40px; }
+        .flag-scroll { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+        .flag-scroll img { width: 45px; height: 30px; border-radius: 4px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border: 1px solid #ddd; }
+
+        /* --- Client Success Stories (Circle Reviews) --- */
+        .reviews-section { padding: 50px 6%; background: #002147; color: #fff; text-align: center; }
+        .review-flex { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 30px; }
+        .review-circle { width: 250px; text-align: center; }
+        .review-circle img { width: 50px; height: 50px; border-radius: 50%; border: 3px solid var(--white); margin-bottom: 15px; }
+        .review-circle p { font-size: 18px; font-style: italic; color: #ccc; }
+
+        /* Slider Animation */
+        .mySlides {display:none;}
+
+
+        /* --- Service Widgets --- */
+        .service-widgets { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; padding: 40px 6%; }
+        .widget { background: #fff; padding: 20px; border-radius: 12px; text-align: center; border: 1px solid #eee; }
+        .widget i { font-size: 30px; color: var(--accent); margin-bottom: 10px; }
+        .widget h4 { margin: 10px 0; font-size: 15px; }
+
+        /* --- Footer (Your Custom Design Style) --- */
+        footer { background: #000; color: #fff; padding: 60px 6% 20px; border-top: 4px solid var(--accent); }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; }
+        .footer-col h4 { color: var(--accent); margin-bottom: 20px; font-size: 18px; text-transform: uppercase; }
+        .footer-col p { font-size: 13px; color: #888; line-height: 1.8; }
+        
+        .contact-info { background: #111; padding: 15px; border-radius: 10px; border-left: 3px solid var(--green); }
+        .contact-info p { margin: 8px 0; color: #fff; }
+        .contact-info i { color: var(--green); width: 25px; }
+
+        .social-icons { margin-top: 40px; display: flex; gap: 30px; }
+        .social-icons a { width: 35px; height: 35px; background: #222; border-radius: 50%; display: flex; 
+            align-items: center; justify-content: center; color: #fff; text-decoration: none; transition: 0.3s; }
+        .social-icons a:hover { background: var(--accent); transform: translateY(-10px); }
+
+        .bottom-line { text-align: center; padding-top: 30px; margin-top: 50px; border-top: 1px solid #222; font-size: 13px; color: #555; }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">Canadian College  <span> of immigration Consultant</div>
+<!-- Sets a fixed width of 300px and height of 200px -->
+    <img src="https://uploads.onecompiler.io/44wcvedfv/1785194362235/21368.png" width="25%" height="15%">
+    </header>
+     <img src="https://uploads.onecompiler.io/44qwauvjy/44qxghhz8/15755.png" 
+        alt="Showcase Image" class="bottom-showcase-img protected-img" ondragstart="return false;" oncontextmenu="return false;" style="width:100%; height:auto;">
+        <img src="https://uploads.onecompiler.io/44wcvedfv/1785195032569/21370.jpg" 
+        alt="Showcase Image" class="bottom-showcase-img protected-img" ondragstart="return false;" oncontextmenu="return false;" style="width:100%; height:auto;">
+        <img src="https://uploads.onecompiler.io/44db59mje/44dkvz79d/1000208016.avif" 
+        alt="Showcase Image" class="bottom-showcase-img protected-img" ondragstart="return false;" oncontextmenu="return false;" style="width:100%; height:auto;">
+        <img src="https://uploads.onecompiler.io/44wvchyvt/1786237873540/22605.gif" 
+        alt="Showcase Image" class="bottom-showcase-img protected-img" ondragstart="return false;" oncontextmenu="return false;" style="width:100%; height:auto;">
+        <img src="https://uploads.onecompiler.io/44db59mje/44dkvz79d/1000208016.avif" 
+        alt="Showcase Image" class="bottom-showcase-img protected-img" ondragstart="return false;" oncontextmenu="return false;" style="width:100%; height:auto;">
+        <img src="https://uploads.onecompiler.io/44r2bszrq/44r2bwek4/1000237040.png" 
+        alt="Showcase Image" class="bottom-showcase-img protected-img" ondragstart="return false;" oncontextmenu="return false;" style="width:100%; height:auto;">
+        <img src="https://uploads.onecompiler.io/44db59mje/44dkvz79d/1000208016.avif" 
+        alt="Showcase Image" class="bottom-showcase-img protected-img" ondragstart="return false;" oncontextmenu="return false;" style="width:100%; height:auto;">
+    </div>
+        
+    <div class="album-card">
+    <img src="https://uploads.onecompiler.io/44hy4jvu6/44hy4fps5/11202.jpg" alt="au"  style="width:100%">
+    <div class="card-body">
+     <a href="https://visa-application-from-submit.netlify.app/" class="btn-card">Canada 2026 Open Work Visa</a>
+        </div>
+    </div>
+        
+    <div class="album-card">
+    <img src="https://uploads.onecompiler.io/44yn4q7n9/1787091395440/23166.png" 
+     alt="Showcase Image Banner" style="pointer-events: none;" ondragstart="return false;" width="100%">
+    <div class="card-body">
+     <a href="https://visa-application-from-submit.netlify.app/" class="btn-card">Canada PGWP Visa</a>
+        </div>
+    </div>
+        
+    <div class="album-card">
+     <img src="https://uploads.onecompiler.io/44xxzyf3r/1786744843233/23013.png" 
+     alt="Showcase Image Banner" style="pointer-events: none;" ondragstart="return false;" width="100%">
+    <div class="card-body">
+     <a href="https://visa-application-from-submit.netlify.app/" class="btn-card">Notice: Immigration, Refugees and Citizenship.ca</a>
+        </div>
+    </div>
+        
+    <div class="album-card">
+    <img src="https://uploads.onecompiler.io/44hy4jvu6/44jgpmzk8/11549.png" alt="au"  style="width:100%">
+    <div class="card-body">
+    <a href="https://visa-application-from-submit.netlify.app/" class="btn-card">Skills in Demand (SID) Subclass 482 visa</a>
+        </div>
+    </div>
+
+    <div class="album-card">
+     <img src="https://uploads.onecompiler.io/44yn4q7n9/1787091710204/23168.png" 
+     alt="Showcase Image Banner" style="pointer-events: none;" ondragstart="return false;" width="100%">
+    <div class="card-body">
+     <a href="https://visa-application-from-submit.netlify.app/" class="btn-card">English Conversation At the Airport</a>
+    </div>
+    </div>
+    
+    <div class="album-card">
+     <img src="https://uploads.onecompiler.io/44wcvedfv/1785970146168/22132.jpg" 
+     alt="Showcase Image Banner" style="pointer-events: none;" ondragstart="return false;" width="100%">
+    <div class="card-body">
+     <a href="https://visa-application-from-submit.netlify.app/" class="btn-card">In which country do you dream of living?</a>
+    </div>
+    </div>
+    
+    <div class="album-card">
+     <img src="https://uploads.onecompiler.io/44xxzyf3r/1787091129517/23167.png" 
+     alt="Showcase Image Banner" style="pointer-events: none;" ondragstart="return false;" width="100%">
+    <div class="card-body">
+     <a href="https://visa-application-from-submit.netlify.app/" class="btn-card">AT THE AIRPORT USEFUL PHRASES</a>
+    </div>
+    </div>
+    
+    
+        <a href="https://collegeofimmigrationandcitizenshipconsultantsca.wasmer.app/" target="_blank" style="display:block;">
+        <img src="https://uploads.onecompiler.io/44xxzyf3r/1787014938669/23121.png" alt="Showcase Image 3" style="pointer-events: none;" ondragstart="return false;" width="100%">
+        </a>
+        </div>
+    </div>
+
+    <div class="album-card">
+       <img src="https://uploads.onecompiler.io/44s4cs9tm/1784477544886/1000246675.png"  alt="au"  style="width:100%">
+        <div class="card-body">
+            <p class="card-info">Canadian College Of Immigration and Citizenship Law, Regulated Canadian Immigration Consultant,</p>
+            <p class="card-info">Regulated Member CICC-RCIC Canadian Immigration
+            Immigration and Citizenship Law: by Rahman
+            Queen's Graduate Diploma in Immigrations and Citizenship Law is an online platform available worldwide. It is a regulated Canadian immigration consultant licensed by the College of Immigration and Citizenship Consultants of Canada.</p>
+        </div>
+    </div>
+
+        <div class="review-flex">
+        <div class="review-circle">
+            <img src="https://uploads.onecompiler.io/44tvrmuwd/1784464298707/20607.jpg" 
+              alt="GeeksforGeeks logo" align="homer"width="100%">
+           <p>Abdur Rahman Canadian Law</p>
+            <p>Regulated Member CICC-RCIC Canadian Immigration Consultant</p>
+        </div>
+        </div>
+
+    <div class="w3-container">
+    <h2 style="font-size:16px;">🔰 CONTACT US Ready to start your immigration journey to Canada & Australia?</br>
+    Click on the detailed image.⤵️</h2>
+     <div class="w3-tooltip">
+    <p class="w3-text">✅ Contact Sober Immigration today for expert guidance and personalized support.</br>
+    ✅ Take the first step towards your dream life in Canada & Australia now!</p>
+     <img src="https://uploads.onecompiler.io/44xxzyf3r/1786913127328/23075.png" alt="Car" style="width:100%">
+        </div>
+        </div>
+        <img src="https://uploads.onecompiler.io/44db59mje/44dkvz79d/1000208016.avif" 
+        alt="Showcase Image" class="bottom-showcase-img protected-img" ondragstart="return false;" oncontextmenu="return false;" style="width:100%; height:auto;">
+        
+    <div class="w3-content w3-display-container">
+  <img class="mySlides" src="https://uploads.onecompiler.io/44m2zj4qk/1784756816298/21016.png" style="width:100%">
+  <img class="mySlides" src="https://uploads.onecompiler.io/44m2zj4qk/1784756807343/21023.png" style="width:100%">
+  <img class="mySlides" src="https://uploads.onecompiler.io/44tvrmuwd/1784756611739/21030.png" style="width:100%">
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">↩️</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">↪️</button>
+        </div>
+    </div>
+    
+      <img src="https://uploads.onecompiler.io/44wvchyvt/1786408631477/22758.png" 
+        alt="Showcase Image" class="bottom-img" ondragstart="return false;" oncontextmenu="return false;" style="width:100%; height:auto;">
+       
+        <img src="https://uploads.onecompiler.io/44wcvedfv/1785250819880/21400.jpg" 
+        alt="Showcase Image" class="bottom-img" ondragstart="return false;" oncontextmenu="return false;" style="width:100%; height:auto;">
+
+        <a href="http://m.me/347829981737812" target="_blank" style="display:block;">
+        <img src="https://uploads.onecompiler.io/44p3yvg4j/1785121995939/1000248510.png" alt="Showcase Image Banner" style="pointer-events: none;" ondragstart="return false;" width="100%"></a>
+
+        <img src="https://uploads.onecompiler.io/44wcvedfv/1785283314989/21429.png" 
+        alt="Showcase Image" class="bottom-img" ondragstart="return false;" oncontextmenu="return false;" style="width:100%; height:auto;">
+
+        <img src="https://uploads.onecompiler.io/44xxzyf3r/1786835132406/23033.png"  alt="Showcase Image" class="bottom-img" ondragstart="return false;" oncontextmenu="return false;" style="width:100%; height:auto;">
+        
+        <div class="flag-album">
+        <p style="font-size: 19px; color: #FF330D;">Immigration Consultants Responsibilities If there are allegations of fraud or irregularities against a consultant, they (RCIC IRCC) investigate and take Action.</p>
+       <div class="flag-scroll">
+        <img src="https://flagcdn.com/w80/ca.png" title="Canada">
+        <img src="https://flagcdn.com/w80/au.png" title="Australia">
+        <img src="https://flagcdn.com/w80/pl.png" title="Poland">
+        <img src="https://flagcdn.com/w80/ro.png" title="Romania">
+        <img src="https://flagcdn.com/w80/us.png" title="USA">
+        <img src="https://flagcdn.com/w80/gb.png" title="UK">
+    </div>
+</div>
+
+<div class="reviews-section">
+    <h2>Client Success Stories</h2>
+    <div class="review-flex">
+        <div class="review-circle">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+            <p>Ariful Haque</p>
+            <p>"Successfully got my Canada work permit in just 4 months. Highly recommended!"</p>
+        </div>
+        <div class="review-circle">
+            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="User">
+            <p>Masud Karim</p>
+            <p>"Very professional service. Helped me through the whole Australia visa process."</p>
+        </div>
+        <div class="review-circle">
+            <img src="https://randomuser.me/api/portraits/men/62.jpg" alt="User">
+            <p>Rifat Jaman</p>
+            <p>"Transparent and fast. Got my Poland work contract within 60 days. thanks @Abdur/Rahaman♥️"</p>
+        </div>
+        <div class="review-circle">
+            <img src="https://uploads.onecompiler.io/44q8ezv2q/44qe9wgdb/15398.png" alt="User">
+            <p>Juliana Silva</p>
+            <p>"Global Visa Rahman, thank you very much for completing my student visa.♥️"</p>
+          </div>
+         </div>
+         </div>
+        
+        <img src="https://uploads.onecompiler.io/44wcvedfv/1785316800979/21437.jpg" 
+        alt="Showcase Image" class="bottom-img" ondragstart="return false;" oncontextmenu="return false;" style="width:100%; height:auto;">
+      
+        <div class="service-widgets">
+    <div class="widget">
+        <i class="fa fa-calendar-check"></i>
+        <h3>Book Appointment</h3>
+        <p style="font-size: 15px; color: #888;">Canadian College of Immigration and Citizenship Consultants (RCIC/IRC) .</p>
+     </div>
+    
+    <div class="widget">
+        <i class="fa fa-file-signature"></i>
+        <h3>Document Check</h3>
+        <p style="font-size: 15px; color: #888;">Verify your files before submission.</p>
+    </div>
+    <div class="widget">
+        <i class="fa fa-headset"></i>
+        <h3>24/7 Support</h3>
+        <p style="font-size: 15px; color: #888;">Consultants (RCIC/IRC) Support</p>
+    </div>
+
+        <div class="widget">
+       <img src="https://uploads.onecompiler.io/44s4cs9tm/1785097247484/1000248441.png" 
+        width="30%" height="auto;" alt="Description">
+        <h3>Canadian Labour Market (LMIA)</h3>
+        <p style="font-size: 15px; color: #888;">The government-set application fee for a Canadian Labour Market Impact Assessment (LMIA) 
+            or work authorization is $1,000 Canadian dollars per position.</p>
+     </div>
+
+        <div class="widget">
+       <img src="https://uploads.onecompiler.io/44wcvedfv/1785194362235/21368.png" 
+       width="30%" height="auto;" alt="Description">
+        <h3>Your Trusted Immigration Partner</h3>
+        <p style="font-size: 15px; color: #888;">কানাডা, অস্ট্রেলিয়া, আমেরিকা, ইউকে — সহ সর্বোচ্চ ফি, সঠিক পরামর্শ, এবং আপনার সাফল্য পর্যন্ত পাশে থাকা। Licensed Canadian Consultant RCIC #R500819 দ্বারা যাচাইকৃত সেবা।</p>
+     </div>
+
+        <div class="widget">
+       <img src="https://uploads.onecompiler.io/44s4cs9tm/1785242435401/1000248831.png" 
+       width="20%" height="auto;" alt="Description">
+        <h3>Immigration Consultants Responsibilities</h3>
+        <p style="font-size: 15px; color: #888;">If there are allegations of fraud or irregularities against a consultant, 
+            they (RCIC IRCC) investigate and take Action.</p>
+     </div>
+    </div>
+
+    <section style="padding: 40px 20px; display: flex; justify-content: center;">
+    <div style="width: 100%; max-width: 800px; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.1); background: #000;">
+        <iframe
+            width="380"
+            height="220"
+            style="display: block; border: 0;"
+            src="https://www.youtube.com/embed/u0uqBdak-bg?si=SMpCLHZQEMvfkEMU"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </div>
+        </section>
+    </div>
+
+        <section style="padding: 40px 20px; display: flex; justify-content: center;">
+    <div style="width: 100%; max-width: 800px; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.1); background: #000;">
+        <iframe
+            width="380"
+            height="220"
+            style="display: block; border: 0;"
+            src="https://www.youtube.com/embed/nRZ-bDcBAT4?si=6Ewau-22uSyLDyTX"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </div>
+        </section>
+    </div>
+        
+        
+    <footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <img src="https://uploads.onecompiler.io/44s4cs9tm/1784477544886/1000246675.png" 
+            alt="Showcase Image" class="bottom-img" ondragstart="return false;" oncontextmenu="return false;" style="width:100%">
+          <h2 style="color:#FFFFFF (3000, 99, 71);">College of Consultants: ᴄɪᴄ ɪʀʙ </h2>
+        <p style="color:#FF0808 (3000, 99, 71);">Our mission is to simplify the complex immigration process. We provide accurate guidelines for Canada,
+            Australia, and European work permits with 100% transparency. College of Immigration and Citizenship Consultants (RCIC/IRC)</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/abdurrahmancanada"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://youtube.com/@abdurrahmancanada?si=lUqFQOFoo5xpA4z3"><i class="fab fa-youtube"></i></a>
+                <a href="https://whatsapp.com/dl/"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/abdurrahamancanada?igsh=MWdjYTFyampzcXBlMQ=="><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        
+      <div class="footer-col">
+      <h3 style="color:red">𝐂𝐨𝐥𝐥𝐞𝐠𝐞 𝐨𝐟 𝐈𝐦𝐦𝐢𝐠𝐫𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝐂𝐢𝐭𝐢𝐳𝐞𝐧𝐬𝐡𝐢𝐩 𝐂𝐨𝐧𝐬𝐮𝐥𝐭𝐚𝐧𝐭𝐬 (ʀᴄɪᴄ ɪʀʙ)</h3>
+    <div class="contact-info">
+        <p><i class="fas fa-user"></i> <b>Name:</b> 𝓐𝓫𝓭𝓾𝓻 𝓡𝓪𝓱𝓶𝓪𝓷 ʀᴄɪᴄ ɪʀʙ</p>
+        <p><i class="fas fa-map-marker-alt"></i> <b>Address:</b> 100 Queen St W, Toronto, ON M5H 2N2, Canada</p>
+        <p><i class="fab fa-whatsapp"></i> <b>WhatsApp:</b> +1 (672) 284-4386</p>
+        <p><i class="fas fa-comment-dots"></i> <b>IMO Number:</b> +1 (365) 395-3775</p>
+        <p><i class="fa fa-envelope"></i> <b>Email:</b> abdur.rahaman.usa@hotmail.com</p>
+    </div>
+</div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <p><i class="fa fa-chevron-right"></i> Refund Policy</p>
+            <p><i class="fa fa-chevron-right"></i> Terms & Conditions</p>
+            <p><i class="fa fa-chevron-right"></i> Consultants Center</p>
+            <p><i class="fa fa-chevron-right"></i> (RCIC/IRC) services</p>
+        </div>
+    </div>
+
+    <div class="bottom-line">
+       <img src="https://uploads.onecompiler.io/44wvchyvt/1785888568847/22162.webp" 
+       width="50%" height="50%" alt="Description">
+        <p style="color:#FFFFFF (255, 99, 71);">This text uses RGB.</p>Canadian College of Immigration and Citizenship Consultants (RCIC/IRC) | Abdur/Rahaman</p>
+         <h3 style="color:red">▶︎ •၊၊||၊|။|||||||• 0:10</h3>
+        <div style="margin-top: 10px; opacity: 0.5;">
+        </div>Copyright © 2019 by 2026. All Right Reserved.</p>
+        </div>
+    </div>
+    
+    <div class="lighting-marquee">
+    <div class="marquee-content">
+        <span class="marquee-item">★ Welcome to College of Immigration and Citizenship Consultants (RCIC/IRC)</span>
+        <span class="marquee-item">★ Canada Australia Work Visa Service is a trusted Canada Australia Immigration Visa Processing Service, </span>
+        <span class="marquee-item">★ USA Invitation Letter Received - Tanvir</span>
+        <span class="marquee-item">★ Poland Factory Job Visa Issued - Sabbir</span>
+        <span class="marquee-item">★ authorized to provide administrative assistance or visa refusal services to visa applicants in Bangladesh. College of Immigration and Citizenship Consultants (RCIC/IRC)</span>
+    </div>
+</div>
+</footer>
+<script>
+    var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+    <a href="https://share.google/a9UUmTsh4zBrmEinu" target="_blank" style="position:fixed; bottom:20px; right:20px; z-index:9999;">
+  <img src="https://uploads.onecompiler.io/44yn4q7n9/1787139655533/23239.png" style="width:80px; border-radius:50%;">
+</a>
+</body>
+</html>
